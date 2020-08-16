@@ -5,7 +5,7 @@
 5: set doesn't have its own methods, it uses methods given by collection
     following classes implements set interface
 
-    1: HashSet
+    1: HashSet(C)
         -- under line data structure is Hashtable
         -- no duplicate allowed -- no error but add(); returns false
         -- insertion order not preserved -- insert elements based on hashcode
@@ -14,12 +14,12 @@
         -- serializable and cloneable interface
         -- best if search operation is frequent, as stores based on hashcode
 
-    2: LinkedHashSet
+    2: LinkedHashSet(C)
         -- Its child class of HashSet
         -- Same as HashSet but Insertion order preserved
         -- underline data structure is hybrid - combination of Linkedlist and Hashtable
 
-    3: SortedSet
+    3: SortedSet(I)
         --Its child of Set
         --Duplicates not allowed but elements sorted
 
@@ -31,3 +31,12 @@
             -- sorted based on elements inserted
             -- heterogeneous not allowed
             -- null allowed but only once
+
+    4: NavigableSet(I):
+        -- child Interface of SortedSet
+        -- defines several method
+        input : 1,2 3, 4,5 ,6 7,8,9,10,11,12,13,14,15
+            -- lower(10);  .. <10    =9
+            -- floor(10);   ..<=10 ..=10
+            -- high(10);    ..>10 ..= 11
+            -- ceiling(10);     ..>=10 ..=10

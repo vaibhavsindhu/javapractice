@@ -45,5 +45,9 @@
                 -- if we are defining our own sorting using comparator then keys need to be homogeneous and
                 comparable objects also
 
+            6: NavigableMap
+                    --chile Interface of sortedMap
+                    -- it defines several methods for navigation
+
 
 

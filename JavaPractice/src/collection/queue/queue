@@ -1,0 +1,35 @@
+Queue:
+If we want to represent a group of individual objects prior to processing then we should go for queue
+ex.. before sending sms we have to store all mobile numbers in some DS
+In which order we store numbers in the same order they will be delivered.. for this FIFO requirement queue is the best choice
+-- Usually queue follows FIFO we based on our requirement we can implement our own priority order also (priority queue)
+-- from 1.5 version onwards Linked list class implements queue interface..linked list based implementation queue always follow FIFO
+
+Implementation classes for Queue interface
+
+1: Priority queue
+2: Blocking queue
+        a: priority BQ
+        b: Linked BQ
+
+Queue interface specific methods
+    offer();
+    poll();     //remove and return head element.. if queue is empty returns null
+    remove();   //remove and return head element.. if queue is empty returns noSuchElementException
+    peek();     //return head element.. if queue is empty returns null
+    element();  //return head element.. if queue is empty returns noSuchElementException
+
+1: Priority Queue (C)
+    -- Represent elements based on some priority queue
+    -- priority can be default natural soring order or customized sorting order defined by comparator
+    -- Insertion order is not preserved, and its based on some priority
+    -- Duplicates are not allowed
+    -- if we are depending of default natural sorting order, objects should be
+            --homogeneous and comparable else we'll get runtime exception
+    -- If we define our own sorting by comparator
+            -- then object need not be homogeneous and comparable
+    -- null not allowed
+
+Note: Some platform wont provide support for priority queue
+
+
