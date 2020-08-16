@@ -27,4 +27,23 @@
                 --But in the case of WeakHashMap, if obj doesn't contain any references it is eligible for GC
                 even though obj is associated with weakHashMap....GC dominates WeakHashMap
 
+            4: SortedMap(I)
+                   -- child interface of Map
+                   -- if we want to represent a group of key, value pair according to some sorting order
+                   then we should go for SortedMap
+                   -- Sorting is based on the key
+                   --- Sorted map have following methods
+                     Object firstKey()
+
+            5: TreeMap(C)
+                -- DS is Red black tree
+                -- Insertion order not preserved
+                -- duplicate keys not allowed
+                -- dup values allowed
+                -- keys must homogeneous and need to be comparable
+                -- no restriction on values
+                -- if we are defining our own sorting using comparator then keys need to be homogeneous and
+                comparable objects also
+
+
 
