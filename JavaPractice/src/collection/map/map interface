@@ -1,0 +1,30 @@
+--Map interface is not part of collection interface
+--its separate from collection
+--
+---Map interface implemented by following classes
+           1. HashMap
+                -- child class of map
+                -- insertion order not preserved
+                -- non synchronized
+                -- <key,value>
+                -- stored in the form of hashcode
+                -- underline DS is HashTable
+                -- duplicate keys not allowed, value allowed
+                -- null allowed once
+
+           2: LinkedHashMap
+                -- same as HashMap
+                -- underline DS is HashTable+LinedList
+                -- synchronized
+                -- Insertion order preserved
+                -- no duplicate
+                -- no null allowed
+
+           3: WeakHashMap
+                -- It is same as HashMap except the following difference
+                in the case of HashMap even obj does not have any reference it is not eligible for GC
+                if it is associated with HashMap...HashMap dominates GC
+                --But in the case of WeakHashMap, if obj doesn't contain any references it is eligible for GC
+                even though obj is associated with weakHashMap....GC dominates WeakHashMap
+
+

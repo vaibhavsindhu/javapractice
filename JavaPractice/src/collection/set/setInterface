@@ -1,0 +1,33 @@
+1: set interface is child interface of collection interface
+2: Its unordered collection
+3: insertion order not preserved
+4: only unique elements can be there
+5: set doesn't have its own methods, it uses methods given by collection
+    following classes implements set interface
+
+    1: HashSet
+        -- under line data structure is Hashtable
+        -- no duplicate allowed -- no error but add(); returns false
+        -- insertion order not preserved -- insert elements based on hashcode
+        -- heterogeneous allowed
+        -- null allowed
+        -- serializable and cloneable interface
+        -- best if search operation is frequent, as stores based on hashcode
+
+    2: LinkedHashSet
+        -- Its child class of HashSet
+        -- Same as HashSet but Insertion order preserved
+        -- underline data structure is hybrid - combination of Linkedlist and Hashtable
+
+    3: SortedSet
+        --Its child of Set
+        --Duplicates not allowed but elements sorted
+
+            TreeSet
+            -- underline DS is balanced tree
+            --child class of SortedSet
+            --No duplicates
+            --Insertion order not preserved
+            -- sorted based on elements inserted
+            -- heterogeneous not allowed
+            -- null allowed but only once
