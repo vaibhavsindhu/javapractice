@@ -2,8 +2,9 @@ package datastructure.tree;
 
 public class Node {
 
+
     int data;
-    Node root;
-    Node left;
-    Node right;
+    public Node root;
+    public Node left;
+    public Node right;
 }

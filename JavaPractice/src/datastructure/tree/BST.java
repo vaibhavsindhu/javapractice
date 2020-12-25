@@ -17,7 +17,7 @@ public class BST {
 
         if (root == null) {
             root = createNode(data); //when tree is empty..create new node and make it root
-            //Chk if data is new node is smaller than the root if yes goto left of tree and make a recursive call
+            //Chk if data in new node is smaller than the root, if yes goto left of tree and make a recursive call
             // put "=" to create duplicate node at the left if we have duplicate value
         } else if (data <= root.data) {
             root.left = insert(root.left, data);
@@ -329,6 +329,25 @@ public class BST {
 
     public boolean isTreeEmpty(Node root) {
         return (root == null);
+    }
+
+
+    /**
+     * this function will return array list of sorted elements
+     * it will take tree as input and will return sorted array list
+     *
+     * @param root
+     * @param list
+     * @return
+     */
+
+    public ArrayList<Integer> BST_To_List(Node root, ArrayList<Integer> list) {
+        if (root == null) return list;
+
+        BST_To_List(root.left, list);
+        list.add(root.data);
+        BST_To_List(root.right, list);
+        return list;
     }
 
 }

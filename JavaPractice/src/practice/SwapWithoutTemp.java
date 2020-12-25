@@ -3,7 +3,7 @@ package practice;
 import java.sql.SQLOutput;
 import java.util.Scanner;
 
-public class AddWithoutTemp {
+public class SwapWithoutTemp {
     public static void main(String[] args) {
 //        Scanner scanner=new Scanner(System.in);
 //        System.out.println("Please enter input: ");
